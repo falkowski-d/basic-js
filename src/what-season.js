@@ -3,7 +3,8 @@ const CustomError = require("../extensions/custom-error");
 module.exports = function getSeason(date) {
 
   if (Object.prototype.toString.call(date) === "[object Date]") {
-      let tempDate = new Date(date);
+      
+    let tempDate = new Date(date);
       let getMonth = tempDate.getMonth();
       if (getMonth >=2 && getMonth <=4) {
         return 'spring';
